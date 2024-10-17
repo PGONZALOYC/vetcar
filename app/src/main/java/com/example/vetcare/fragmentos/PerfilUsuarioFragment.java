@@ -67,13 +67,21 @@ public class PerfilUsuarioFragment extends Fragment {
 
         // Inflate the layout for this fragment
         View vista = inflater.inflate(R.layout.fragment_perfil_usuario, container, false);
-        View imageView = vista.findViewById(R.id.btnInfoMascota);
+        View infoMastoca = vista.findViewById(R.id.btnInfoMascota);
+        View agreMascota= vista.findViewById(R.id.btnAgregarMascota);
 
-        imageView.setOnClickListener(new View.OnClickListener() {
+        infoMastoca.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 Activity activity = getActivity();
                 ((Menu)activity).onClickMenu(5);
+            }
+        });
+        agreMascota.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Activity activity = getActivity();
+                ((Menu)activity).onClickMenu(7);
             }
         });
         return vista;

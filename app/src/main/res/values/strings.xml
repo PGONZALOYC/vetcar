@@ -121,6 +121,19 @@
     <string name="mascTipoMascota">Seleccione un tipo</string>
     <string name="mascTxtRazaMascota">Raza</string>
 
+    <!--Agregar Mascota-->
+    <string name="agremasEdtNombreMascota">Nombre de la mascota</string>
+    <string name="agremasEdtEdadAnios">Años</string>
+    <string name="agremasEdtEdadMeses">Meses</string>
+    <string name="agremasEdtRazaMascota">Raza de la mascota</string>
+    <string name="agremascBtnSelecImg">Seleccionar Imagen</string>
+    <string name="agremascBtnAgregar">Agregar Mascota</string>
+    <string name="agremascLblNombre">Nombre</string>
+    <string name="agremascLblEdad">Edad</string>
+    <string name="agremascLblTipo">Tipo</string>
+    <string name="agremascImgMascota">Vista previa de la imagen de mascota</string>
+
+
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
 

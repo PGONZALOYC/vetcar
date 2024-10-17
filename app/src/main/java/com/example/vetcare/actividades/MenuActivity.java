@@ -13,6 +13,7 @@ import androidx.fragment.app.FragmentTransaction;
 
 import com.example.vetcare.R;
 import com.example.vetcare.clases.Menu;
+import com.example.vetcare.fragmentos.AgregarMascotaFragment;
 import com.example.vetcare.fragmentos.MisCitasFragment;
 import com.example.vetcare.fragmentos.PerfilMascotaFragment;
 import com.example.vetcare.fragmentos.PerfilUsuarioFragment;
@@ -33,7 +34,7 @@ public class MenuActivity extends AppCompatActivity implements Menu {
             return insets;
         });
 
-        fragments = new Fragment[7];
+        fragments = new Fragment[8];
 
         fragments[0] = new ReservarCitaFragment();
         fragments[1] = new ProductosFragment();
@@ -41,6 +42,7 @@ public class MenuActivity extends AppCompatActivity implements Menu {
         fragments[4] = new PerfilUsuarioFragment();
         fragments[5] = new PerfilMascotaFragment();
         fragments[6] = new ProdutosComidaFragment();
+        fragments[7] = new AgregarMascotaFragment();
 
         int id = getIntent().getIntExtra("id", -1);
         onClickMenu(id);
