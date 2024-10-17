@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    tools:context=".fragmentos.ReservarCitaFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="20dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/reslblReservarT"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="35sp"
+            android:fontFamily="@font/poppins_semibold"
+            android:text="@string/resLblReservaTitulo"
+            android:textColor="@color/titulo"
+            android:layout_marginTop="10dp"/>
+
+        <!-- Servicio -->
+        <CalendarView
+            android:id="@+id/calendReserva"
+            android:layout_width="wrap_content"
+            android:layout_height="300dp"
+            android:layout_marginHorizontal="10dp"
+            android:layout_weight="1" />
+        <TextView
+            android:id="@+id/lblReservarServicio"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="15sp"
+            android:fontFamily="@font/poppins_semibold"
+            android:text="@string/resLblReservarServicio"
+            tools:ignore="TextSizeCheck" />
+        <Spinner
+            android:id="@+id/resCboReservaServicio"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:minHeight="48dp"
+            android:layout_marginBottom="5dp"/>
+
+        <!-- Reserva -->
+        <TextView
+            android:id="@+id/resLblReservarHora"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="15sp"
+            android:fontFamily="@font/poppins_semibold"
+            android:text="@string/resLblReservarHora" />
+        <Spinner
+            android:id="@+id/resCboReservaHora"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:minHeight="48dp"
+            android:layout_marginBottom="5dp"/>
+
+        <!-- Sede -->
+        <TextView
+            android:id="@+id/resLblReservarSede"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="15sp"
+            android:fontFamily="@font/poppins_semibold"
+            android:text="@string/resLblReservarSede" />
+        <Spinner
+            android:id="@+id/resCboReservaSede"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:minHeight="48dp"
+            android:layout_marginBottom="5dp" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp">
+
+            <Button
+                android:id="@+id/resBtnReservarCita"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/poppins_medium"
+                android:text="@string/resBtnReservarCita"
+                android:layout_gravity="center"
+                android:layout_marginHorizontal="80dp"
+                android:textAllCaps="false"
+                android:backgroundTint="@color/btnPrimario"/>
+
+        </LinearLayout>
+    </LinearLayout>
+</FrameLayout>

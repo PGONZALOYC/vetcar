@@ -1,0 +1,208 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".actividades.RegistroActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginHorizontal="20dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/regLblRegistroTitulo"
+            android:textSize="35sp"
+            android:fontFamily="@font/poppins_semibold"
+            android:textColor="@color/titulo"/>
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginVertical="5dp">
+
+                    <EditText
+                        android:id="@+id/regTxtRegistroNombre"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="@string/regTxtRegistroNombre"
+                        android:fontFamily="@font/poppins_medium"
+                        android:maxLength="100"
+                        android:inputType="text"/>
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginVertical="5dp">
+                    <EditText
+                        android:id="@+id/regTxtRegistroApellido"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="@string/regTxtRegistroApellido"
+                        android:fontFamily="@font/poppins_medium"
+                        android:maxLength="100"
+                        android:inputType="text" />
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginVertical="5dp">
+                    <EditText
+                        android:id="@+id/regTxtRegistroDni"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="@string/regTxtRegistroDni"
+                        android:fontFamily="@font/poppins_medium"
+                        android:maxLength="8"
+                        android:inputType="number"
+/>
+                </com.google.android.material.textfield.TextInputLayout>
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginVertical="5dp">
+                    <EditText
+                        android:id="@+id/regTxtRegistroFechaNacimiento"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="@string/regTxtRegistroFechaNacimiento"
+                        android:fontFamily="@font/poppins_medium"
+                        android:clickable="false"
+                        android:focusable="false"
+                        android:maxLength="10"
+                        android:inputType="date" />
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginVertical="5dp">
+                    <EditText
+                        android:id="@+id/regTxtRegistroCorreo"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="@string/regTxtRegistroCorreo"
+                        android:fontFamily="@font/poppins_medium"
+                        android:maxLength="100"
+                        android:inputType="textEmailAddress" />
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <RadioGroup
+                    android:id="@+id/regGrpRegistroSexo"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginVertical="5dp">
+                    <RadioButton
+                        android:id="@+id/regRbtRegistroSinDefinir"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:text="@string/regRbtRegistroSinDefinir"
+                        android:fontFamily="@font/poppins_medium"
+                        android:layout_weight="1"
+                        android:buttonTint="@color/barraProgresion">
+                    </RadioButton>
+                    <RadioButton
+
+                        android:id="@+id/regRbtRegistroFemenino"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:text="@string/regRbtRegistroFemenino"
+                        android:layout_weight="1"
+                        android:buttonTint="@color/barraProgresion">
+                    </RadioButton>
+                    <RadioButton
+                        android:id="@+id/regRbtRegistroMasculino"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:text="@string/regRbtRegistroMasculino"
+                        android:fontFamily="@font/poppins_medium"
+                        android:layout_weight="1"
+                        android:checked="true"
+                        android:buttonTint="@color/barraProgresion">
+                    </RadioButton>
+                </RadioGroup>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:passwordToggleEnabled="true"
+                    android:layout_marginVertical="5dp">
+                    <EditText
+                        android:id="@+id/regTxtRegistroContrasena"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="@string/regTxtRegistroContrasena"
+                        android:fontFamily="@font/poppins_medium"
+                        android:maxLength="100"
+                        android:inputType="textPassword" />
+                </com.google.android.material.textfield.TextInputLayout>
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:passwordToggleEnabled="true"
+                    android:layout_marginVertical="5dp">
+                    <EditText
+                        android:id="@+id/regTxtRegistroConfirmarContrasena"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="@string/regTxtRegistroConfirmarContrasena"
+                        android:fontFamily="@font/poppins_medium"
+                        android:maxLength="100"
+                        android:inputType="textPassword" />
+                </com.google.android.material.textfield.TextInputLayout>
+                <CheckBox
+                    android:id="@+id/regChkRegistroTerminos"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:editable="false"
+                    android:text="@string/regTxtRegistroTerminosCondiciones"
+                    tools:ignore="Deprecated"/>
+
+                <ImageButton
+                    android:id="@+id/imageButtonSiguiente"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:contentDescription="@string/regDescIconoSiguiente"
+                    android:layout_gravity="end"
+                    android:layout_marginVertical="10dp"
+                    android:src="@drawable/icono_siguiente"
+                    android:background="@color/fondoTransparente"/>
+
+                <ProgressBar
+                    android:id="@+id/progressBar"
+                    style="?android:attr/progressBarStyleHorizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:indeterminate="false"
+                    android:max="100"
+                    android:progress="40"
+                    android:progressTint="@color/barraProgresion"/>
+
+
+            </LinearLayout>
+
+
+        </ScrollView>
+
+
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

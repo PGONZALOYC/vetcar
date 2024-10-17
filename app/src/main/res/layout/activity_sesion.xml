@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".actividades.SesionActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:layout_marginHorizontal="20dp">
+        <ImageView
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+            android:src="@drawable/logo"
+            android:scaleType="fitCenter">
+        </ImageView>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/logLblFamilia"
+            android:gravity="center"
+            android:textColor="@color/titulo"
+            android:fontFamily="@font/poppins_semibold"
+            android:textSize="35sp"
+            android:layout_marginTop="10dp">
+        </TextView>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:layout_marginVertical="10dp">
+
+            <EditText
+                android:id="@+id/logTxtCorreo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/poppins_medium"
+                android:hint="@string/logTxtCorreo"
+                android:inputType="textEmailAddress"
+                android:maxLength="100"
+                android:autofillHints="emailAddress"/>
+
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:passwordToggleEnabled="true">
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/logTxtClave"
+                android:hint="@string/logTxtClave"
+                android:inputType="textPassword"
+                android:maxLength="50"
+                android:fontFamily="@font/poppins_medium"
+                android:autofillHints="password"/>
+
+        </com.google.android.material.textfield.TextInputLayout>
+        <CheckBox
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/logChkRecordar"
+            android:text="@string/logChkRecordar"
+            android:fontFamily="@font/poppins_medium"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginVertical="10dp"
+            android:orientation="vertical"
+            android:layout_marginHorizontal="60dp">
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/logBtnIngresar"
+                android:text="@string/logBtnIngresar"
+                android:layout_weight="1"
+                android:textAllCaps="false"
+                android:backgroundTint="@color/btnPrimario"
+                android:fontFamily="@font/poppins_medium"/>
+
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/logBtnRegistrate"
+                android:text="@string/logBtnRegistrate"
+                android:layout_weight="1"
+                android:textAllCaps="false"
+                android:backgroundTint="@color/btnSecundario"
+                android:fontFamily="@font/poppins_medium"/>
+        </LinearLayout>
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/logTxtOlvidasteContrasena"
+            android:text="@string/logTxtOlvidasteContrasena"
+            android:gravity="center"
+            android:textColor="@color/black"
+            android:fontFamily="@font/poppins_semibold">
+        </TextView>
+        <Button
+            android:id="@+id/logBtnSOS"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginVertical="10dp"
+            android:text="@string/logBtnSOS"
+            android:textAllCaps="false"
+            android:backgroundTint="@color/alerta"
+            android:layout_marginHorizontal="60dp"
+            android:fontFamily="@font/poppins_medium"/>
+
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

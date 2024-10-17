@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".actividades.RegistroPrimeraMascotaActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginHorizontal="20dp">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/regLblRegistroPrimMascotaTitulo"
+                android:textSize="35sp"
+                android:fontFamily="@font/poppins_semibold"
+                android:textColor="@color/titulo"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/regLblRegistroPrimMascota"
+                android:textSize="15sp"
+                android:fontFamily="@font/poppins_medium"
+                android:layout_marginVertical="10dp"/>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <EditText
+                    android:id="@+id/regTxtRegistroPrimMascotaNombre"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/regTxtRegistroPrimMascotaNombre"
+                    android:maxLength="100"
+                    android:inputType="text"/>
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/regLblRegistroPrimMascotaEdad"
+                android:textSize="25sp"
+                android:fontFamily="@font/poppins_semibold"
+                android:layout_marginVertical="10dp"
+                android:textColor="@color/titulo"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    >
+                    <EditText
+                        android:id="@+id/regTxtRegistroPrimMascotaAnios"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="@string/regTxtRegistroPrimMascotaAnios"
+                        android:inputType="number"
+                        android:layout_marginRight="10dp"/>
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1">
+                    <EditText
+                        android:id="@+id/regTxtRegistroPrimMascotaMeses"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="@string/regTxtRegistroPrimMascotaMeses"
+                        android:inputType="number"
+                        android:layout_marginLeft="10dp"/>
+                </com.google.android.material.textfield.TextInputLayout>
+            </LinearLayout>
+
+            <!-- Spinner para el tipo de mascota -->
+            <Spinner
+                android:id="@+id/regCboRegistroPrimMascotaTipo"
+                android:layout_width="250dp"
+                android:layout_height="wrap_content"
+                android:layout_marginVertical="10dp"
+                android:minHeight="48dp"/>
+
+            <!-- Spinner para la raza de la mascota -->
+            <Spinner
+                android:id="@+id/regCboRegistroPrimMascotaRaza"
+                android:layout_width="250dp"
+                android:layout_height="wrap_content"
+                android:minHeight="48dp"/>
+
+            <ImageButton
+                android:id="@+id/mascIconoRegistroPrimMascota"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:contentDescription="@string/mascDescIconoRegistroPrimMascota"
+                android:src="@drawable/user_mascota"
+                android:background="@color/fondoTransparente"
+                android:layout_marginTop="25dp"
+                android:layout_gravity="center"/>
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_alignParentBottom="true">
+            <ImageButton
+                android:id="@+id/imageButtonSiguiente"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:contentDescription="@string/regDescIconoSiguiente"
+                android:layout_gravity="end"
+                android:layout_marginVertical="10dp"
+                android:src="@drawable/icono_siguiente"
+                android:background="@color/fondoTransparente"/>
+
+            <ProgressBar
+                android:id="@+id/progressBar"
+                style="?android:attr/progressBarStyleHorizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:indeterminate="false"
+                android:max="100"
+                android:progress="70"
+                android:progressTint="@color/barraProgresion" />
+
+        </LinearLayout>
+
+
+    </RelativeLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

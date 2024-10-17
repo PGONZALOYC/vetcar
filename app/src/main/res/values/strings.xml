@@ -1,0 +1,127 @@
+<resources>
+    <string name="app_name">Vetcare</string>
+    <string name="bieLblSaludo">Hola: </string>
+
+    <!--Sesión-->
+    <string name="logTxtCorreo">Correo</string>
+    <string name="logTxtClave">Contraseña</string>
+    <string name="logBtnIngresar">Ingresar</string>
+    <string name="logBtnRegistrate">Registrate</string>
+    <string name="logChkRecordar">Recordar sesión</string>
+    <string name="logBtnSOS">SOS</string>
+    <string name="logTxtOlvidasteContrasena">¿Olvidate tu contraseña</string>
+    <string name="logLblFamilia">Vetcare</string>
+
+    <!--Olvidaste Contraseña-->
+    <string name="olvLblOlvidasteContrasenaTitulo">¿Olvidaste tu contraseña?</string>
+    <string name="olvLblOlvidasteContrasenaInstrucciones">Ingresa tu correo electrónico.Te enviaremos un código para continuar.</string>
+    <string name="olvTxtOlvidasteContrasenaCorreo">Correo electrónico</string>
+    <string name="olvBtnOlvidasteContrasenaEnviar">Enviar</string>
+
+    <!--Confirmar Codigo-->
+    <string name="confLblConfirmarCodigoTitulo">Verifica tu identidad</string>
+    <string name="confLblConfirmarCodigoInstrucciones">Ingresa el código de seis digitos</string>
+    <string name="confTxtConfirmarCodigo">Código</string>
+    <string name="confBtnConfirmarCodigoVerificar">Verificar</string>
+
+    <!--Cambiar contraseña-->
+    <string name="camLblCambiarContrasenaTitulo">Verifica tu identidad</string>
+    <string name="camLblCambiarContrasenaInstrucciones">Para mayor seguridad, deberás crear una nueva contraseña.</string>
+    <string name="camTxtCambiarContrasenaNueva">Nueva contraseña</string>
+    <string name="camTxtCambiarContrasenaConfirmarNueva">Confirmar contraseña</string>
+    <string name="camBtnCambiarContrasenaAceptar">Aceptar</string>
+
+
+    <!--Registro usuario-->
+    <string name="regLblRegistroTitulo">Empecemos registrando tus datos</string>
+    <string name="regTxtRegistroNombre">Nombre(s)</string>
+    <string name="regTxtRegistroApellido">Apellidos</string>
+    <string name="regTxtRegistroDni">DNI</string>
+    <string name="regTxtRegistroFechaNacimiento">Fecha de nacimiento</string>
+    <string name="regTxtRegistroCorreo">Correo electrónico</string>
+    <string name="regRbtRegistroSinDefinir">Sin definir</string>
+    <string name="regRbtRegistroFemenino">Femenino</string>
+    <string name="regRbtRegistroMasculino">Masculino</string>
+    <string name="regTxtRegistroContrasena">Contraseña</string>
+    <string name="regTxtRegistroConfirmarContrasena">Confirmar contraseña</string>
+    <string name="regTxtRegistroTerminosCondiciones">Terminos y Condiciones</string>
+    <string name="regDescIconoSiguiente">Icono siguiente</string>
+
+    <!--Registro de primera mascota-->
+    <string name="regLblRegistroPrimMascotaTitulo">Cuéntanos Sobre Tu Mascota </string>
+    <string name="regLblRegistroPrimMascota">Si tienes más de una no te preocupes, luego podrás registrar otra. </string>
+    <string name="regTxtRegistroPrimMascotaNombre">Nombre(s)</string>
+    <string name="regLblRegistroPrimMascotaEdad">Edad</string>
+    <string name="regTxtRegistroPrimMascotaAnios">Años</string>
+    <string name="regTxtRegistroPrimMascotaMeses">Meses</string>
+    <string name="mascDescIconoRegistroPrimMascota">Icono mascota</string>
+
+
+    <!--FRAGMENTOS-->
+    <!--    Reserva de cita-->
+    <string name="resLblReservaTitulo">Reservar cita</string>
+    <string name="resLblReservarServicio">Servicio</string>
+    <string name="resLblReservarHora">Hora</string>
+    <string name="resLblReservarSede">Sede</string>
+    <string name="resBtnReservarCita">Reservar cita</string>
+
+    <!--Productos-->
+    <string name="proLblProductosTitulo">Productos</string>
+    <string name="proLblComida">Comida</string>
+    <string name="proLblHigiene">Higiene</string>
+    <string name="proLblJuguete">Juguetes</string>
+    <string name="proLblAccesorios">Accesorios</string>
+    <string name="proDescIconoBuscar">Icono buscar</string>
+    <string name="proDescIconoCarrito">Icono carrito</string>
+    <string name="proDescIconoComida">Icono comida</string>
+    <string name="proDescIconoHigiene">Icono higiene</string>
+    <string name="proDescIconoJuguete">Icono juguete</string>
+    <string name="proDescIconoAccesorios">Icono accesorios</string>
+
+    <!--Productos comida-->
+    <string name="proLblProductosComidaTitulo">Comida</string>
+    <string name="proDescIconoComidaCanbo">Comida canbo</string>
+    <string name="proLblComidaCanbo">Canbo super premium S/.23.00</string>
+    <string name="proDescIconoComidaCanbo2">Comida canbo 2</string>
+    <string name="proLblComidaCanbo2">Canbo super premium S/.23.00</string>
+    <string name="proDescIconoComidaWhiskas">Comida whisksa</string>
+    <string name="proLblComidaWhiskas">Whiska super premium S/.25.00</string>
+    <string name="proDescIconoComidaWhiskas2">Comida whiskas 2</string>
+    <string name="proLblComidaWhiskas2">Whiskas super premium S/.25.00</string>
+
+    <!--Mis citas-->
+    <string name="citLblMisCitasTitulo">Mis citas</string>
+    <string name="citLblFechaCita">26 junio</string>
+    <string name="citLblDetalleCita">Vacunación / Perro</string>
+    <string name="citLblProximaCita">Próximas citas</string>
+    <string name="citLblFechaProximaCita">28 junio</string>
+    <string name="citLblDetalleProximaCita">Vacunación / Perro</string>
+
+    <!--Perfil usuario-->
+    <string name="perLblPerfilTitulo">Perfil</string>
+    <string name="perTxtNombre">Nombres</string>
+    <string name="perTxtApellido">Apellidos</string>
+    <string name="perTxtTelefono">Número de teléfono</string>
+    <string name="perTxtCorreo">Correo electrónico</string>
+    <string name="perLblMisMascotas">Mis mascotas</string>
+    <string name="perDescIconoUsuario">Icono usuario</string>
+    <string name="perDescIconoEditar">Icono editar</string>
+    <string name="perDescIconoMascota1">Icono mascota 1</string>
+    <string name="perDescIconoMascota2">Icono mascota 2</string>
+    <string name="perDescIconoAgregar">Icono agregar</string>
+    <string name="perNombMascota1">Max</string>
+    <string name="perNombMascota2">Wilson</string>
+
+    <!--Mascota-->
+    <string name="mascLblPerfilMascota">Información de la mascota</string>
+    <string name="mascDescIconoMascota">Icono mascota</string>
+    <string name="mascDescIconoEditar">Icono editar</string>
+    <string name="mascTxtNombreMascota">Nombre</string>
+    <string name="mascTxtEdadMascota">Edad</string>
+    <string name="mascTipoMascota">Seleccione un tipo</string>
+    <string name="mascTxtRazaMascota">Raza</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+</resources>
