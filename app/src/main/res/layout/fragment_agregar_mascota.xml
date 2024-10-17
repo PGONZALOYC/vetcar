@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    tools:context=".fragmentos.AgregarMascotaFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Agregar Mascota"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:layout_gravity="center"
+            android:paddingBottom="16dp"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/agremascLblNombre"
+            android:paddingTop="16dp"
+            android:paddingBottom="8dp"/>
+
+        <EditText
+            android:id="@+id/agremasEdtNombreMascota"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/agremasEdtNombreMascota"
+            android:padding="8dp"
+            android:inputType="text"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/agremascLblEdad"
+            android:paddingTop="16dp"
+            android:paddingBottom="8dp"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <EditText
+                android:id="@+id/agrmasEdtEdadAnios"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:hint="@string/agremasEdtEdadAnios"
+                android:padding="8dp"
+                android:inputType="number"/>
+
+            <EditText
+                android:id="@+id/agrmasEdtEdadMeses"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:hint="@string/agremasEdtEdadMeses"
+                android:padding="8dp"
+                android:inputType="number"/>
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/agremascLblTipo"
+            android:paddingTop="16dp"
+            android:paddingBottom="8dp"/>
+
+        <Spinner
+            android:id="@+id/agremascSpinnerTipoMascota"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="8dp"/>
+
+        <EditText
+            android:id="@+id/agremasEdtRazaMascota"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/agremasEdtRazaMascota"
+            android:padding="8dp"/>
+
+        <ImageView
+            android:id="@+id/agremascImgMascota"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="25dp"
+            android:background="@color/fondoTransparente"
+            android:contentDescription="@string/agremascImgMascota"
+            android:src="@drawable/user_mascota"/>
+
+        <Button
+            android:id="@+id/agremascBtnSubirImagen"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/agremascBtnSelecImg"
+            android:textAllCaps="false"
+            android:backgroundTint="@color/btnSecundario"
+            android:fontFamily="@font/poppins_medium"/>
+
+        <Button
+            android:id="@+id/agremascBtnAgregarMascota"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/agremascBtnAgregar"
+            android:textAllCaps="false"
+            android:backgroundTint="@color/btnPrimario"
+            android:fontFamily="@font/poppins_medium"/>
+
+    </LinearLayout>
+</FrameLayout>
