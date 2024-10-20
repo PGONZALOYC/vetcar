@@ -1,6 +1,7 @@
 package com.example.vetcare.fragmentos;
 
-import android.app.Activity;
+import android.content.Context;
+import android.content.SharedPreferences;
 import android.os.Bundle;
 
 import androidx.fragment.app.Fragment;
@@ -8,9 +9,9 @@ import androidx.fragment.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.TextView;
 
 import com.example.vetcare.R;
-import com.example.vetcare.clases.Menu;
 
 /**
  * A simple {@link Fragment} subclass.
@@ -38,7 +39,7 @@ public class ProductosFragment extends Fragment {
      *
      * @param param1 Parameter 1.
      * @param param2 Parameter 2.
-     * @return A new instance of fragment ProductosFragment.
+     * @return A new instance of fragment ProdutosComidaFragment.
      */
     // TODO: Rename and change types and number of parameters
     public static ProductosFragment newInstance(String param1, String param2) {
@@ -62,17 +63,13 @@ public class ProductosFragment extends Fragment {
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
-        // Inflate the layout for this fragment
         View vista = inflater.inflate(R.layout.fragment_productos, container, false);
-        View imageView = vista.findViewById(R.id.proIconoComida);
+        TextView titulo = vista.findViewById(R.id.proLblProductosTitulo);
 
-        imageView.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Activity activity = getActivity();
-                ((Menu)activity).onClickMenu(6);
-            }
-        });
+        Context context = getActivity();
+        SharedPreferences sharedPreferences = context.getSharedPreferences("Sistema", Context.MODE_PRIVATE);
+        String valor = sharedPreferences.getString("categoria", "null");
+        titulo.setText(valor);
         return vista;
     }
 }

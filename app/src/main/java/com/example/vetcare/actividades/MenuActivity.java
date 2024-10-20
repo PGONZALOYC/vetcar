@@ -17,8 +17,8 @@ import com.example.vetcare.fragmentos.AgregarMascotaFragment;
 import com.example.vetcare.fragmentos.MisCitasFragment;
 import com.example.vetcare.fragmentos.PerfilMascotaFragment;
 import com.example.vetcare.fragmentos.PerfilUsuarioFragment;
+import com.example.vetcare.fragmentos.CategProductosFragment;
 import com.example.vetcare.fragmentos.ProductosFragment;
-import com.example.vetcare.fragmentos.ProdutosComidaFragment;
 import com.example.vetcare.fragmentos.ReservarCitaFragment;
 
 public class MenuActivity extends AppCompatActivity implements Menu {
@@ -37,11 +37,11 @@ public class MenuActivity extends AppCompatActivity implements Menu {
         fragments = new Fragment[8];
 
         fragments[0] = new ReservarCitaFragment();
-        fragments[1] = new ProductosFragment();
+        fragments[1] = new CategProductosFragment();
         fragments[2] = new MisCitasFragment();
         fragments[4] = new PerfilUsuarioFragment();
         fragments[5] = new PerfilMascotaFragment();
-        fragments[6] = new ProdutosComidaFragment();
+        fragments[6] = new ProductosFragment();
         fragments[7] = new AgregarMascotaFragment();
 
         int id = getIntent().getIntExtra("id", -1);
@@ -55,4 +55,6 @@ public class MenuActivity extends AppCompatActivity implements Menu {
         ft.replace(R.id.menRelArea, fragments[id]);
         ft.commit();
     }
+
+
 }
