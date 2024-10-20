@@ -29,7 +29,7 @@ public class CambiarContrasenaActivity extends AppCompatActivity implements View
         });
         camTxtCambiarContrasenaNueva = findViewById(R.id.camTxtCambiarContrasenaNueva);
         camTxtCambiarContrasenaConfirmarNueva = findViewById(R.id.camTxtCambiarContrasenaConfirmarNueva);
-
+        camBtnCambiarContrasenaAceptar = findViewById(R.id.camBtnCambiarContrasenaAceptar);
         camBtnCambiarContrasenaAceptar.setOnClickListener(this);
     }
 
