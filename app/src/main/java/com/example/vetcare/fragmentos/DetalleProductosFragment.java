@@ -1,26 +1,23 @@
 package com.example.vetcare.fragmentos;
 
-import android.app.Activity;
 import android.content.Context;
 import android.content.SharedPreferences;
 import android.os.Bundle;
-
-import androidx.fragment.app.Fragment;
-
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.TextView;
 
+import androidx.fragment.app.Fragment;
+
 import com.example.vetcare.R;
-import com.example.vetcare.clases.Menu;
 
 /**
  * A simple {@link Fragment} subclass.
- * Use the {@link ProductosFragment#newInstance} factory method to
+ * Use the {@link DetalleProductosFragment#newInstance} factory method to
  * create an instance of this fragment.
  */
-public class ProductosFragment extends Fragment {
+public class DetalleProductosFragment extends Fragment {
 
     // TODO: Rename parameter arguments, choose names that match
     // the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
@@ -31,7 +28,7 @@ public class ProductosFragment extends Fragment {
     private String mParam1;
     private String mParam2;
 
-    public ProductosFragment() {
+    public DetalleProductosFragment() {
         // Required empty public constructor
     }
 
@@ -44,8 +41,8 @@ public class ProductosFragment extends Fragment {
      * @return A new instance of fragment ProdutosComidaFragment.
      */
     // TODO: Rename and change types and number of parameters
-    public static ProductosFragment newInstance(String param1, String param2) {
-        ProductosFragment fragment = new ProductosFragment();
+    public static DetalleProductosFragment newInstance(String param1, String param2) {
+        DetalleProductosFragment fragment = new DetalleProductosFragment();
         Bundle args = new Bundle();
         args.putString(ARG_PARAM1, param1);
         args.putString(ARG_PARAM2, param2);
@@ -65,32 +62,7 @@ public class ProductosFragment extends Fragment {
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
-        View vista = inflater.inflate(R.layout.fragment_productos, container, false);
-        TextView titulo = vista.findViewById(R.id.proLblProductosTitulo);
 
-        Context context = getActivity();
-        SharedPreferences sharedPreferences = context.getSharedPreferences("Sistema", Context.MODE_PRIVATE);
-        String valor = sharedPreferences.getString("categoria", "null");
-        titulo.setText(valor);
-
-        View iconoComida1 = vista.findViewById(R.id.proIconoComidaCanbo);
-        View iconoComida2 = vista.findViewById(R.id.proIconoComidaCanbo2);
-        View iconoComida3 = vista.findViewById(R.id.proIconoComidaWhiskas);
-        View iconoComida4 = vista.findViewById(R.id.proIconoComidaWhiskas2);
-
-
-        View.OnClickListener listener = new View.OnClickListener(){
-            @Override
-            public void onClick(View view) {
-                Activity activity = getActivity();
-                ((Menu)activity).onClickMenu(8);
-            }
-        };
-        iconoComida1.setOnClickListener(listener);
-        iconoComida2.setOnClickListener(listener);
-        iconoComida3.setOnClickListener(listener);
-        iconoComida4.setOnClickListener(listener);
-
-        return vista;
+        return inflater.inflate(R.layout.fragment_detalle_producto, container, false);
     }
 }
