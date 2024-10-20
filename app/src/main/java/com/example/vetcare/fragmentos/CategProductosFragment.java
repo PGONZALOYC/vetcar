@@ -17,10 +17,10 @@ import com.example.vetcare.clases.Menu;
 
 /**
  * A simple {@link Fragment} subclass.
- * Use the {@link ProductosFragment#newInstance} factory method to
+ * Use the {@link CategProductosFragment#newInstance} factory method to
  * create an instance of this fragment.
  */
-public class ProductosFragment extends Fragment {
+public class CategProductosFragment extends Fragment {
 
     // TODO: Rename parameter arguments, choose names that match
     // the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
@@ -31,7 +31,7 @@ public class ProductosFragment extends Fragment {
     private String mParam1;
     private String mParam2;
 
-    public ProductosFragment() {
+    public CategProductosFragment() {
         // Required empty public constructor
     }
 
@@ -41,16 +41,17 @@ public class ProductosFragment extends Fragment {
      *
      * @param param1 Parameter 1.
      * @param param2 Parameter 2.
-     * @return A new instance of fragment ProdutosComidaFragment.
+     * @return A new instance of fragment ProductosFragment.
      */
     // TODO: Rename and change types and number of parameters
-    public static ProductosFragment newInstance(String param1, String param2) {
-        ProductosFragment fragment = new ProductosFragment();
+    public static CategProductosFragment newInstance(String param1, String param2) {
+        CategProductosFragment fragment = new CategProductosFragment();
         Bundle args = new Bundle();
         args.putString(ARG_PARAM1, param1);
         args.putString(ARG_PARAM2, param2);
         fragment.setArguments(args);
         return fragment;
+
     }
 
     @Override
@@ -65,31 +66,50 @@ public class ProductosFragment extends Fragment {
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
-        View vista = inflater.inflate(R.layout.fragment_productos, container, false);
-        TextView titulo = vista.findViewById(R.id.proLblProductosTitulo);
+        // Inflate the layout for this fragment
+        View vista = inflater.inflate(R.layout.fragment_categproductos, container, false);
+        View iconoComida = vista.findViewById(R.id.proIconoComida);
+        View iconoHigiene = vista.findViewById(R.id.proIconoHigiene);
+        View iconoJuguetes = vista.findViewById(R.id.proIconoJuguete);
+        View iconoAccesorios = vista.findViewById(R.id.proIconoAccesorios);
+        View vista2 = inflater.inflate(R.layout.fragment_productos, container, false);
+        TextView titulo = vista2.findViewById(R.id.proLblProductosTitulo);
 
         Context context = getActivity();
         SharedPreferences sharedPreferences = context.getSharedPreferences("Sistema", Context.MODE_PRIVATE);
-        String valor = sharedPreferences.getString("categoria", "null");
-        titulo.setText(valor);
-
-        View iconoComida1 = vista.findViewById(R.id.proIconoComidaCanbo);
-        View iconoComida2 = vista.findViewById(R.id.proIconoComidaCanbo2);
-        View iconoComida3 = vista.findViewById(R.id.proIconoComidaWhiskas);
-        View iconoComida4 = vista.findViewById(R.id.proIconoComidaWhiskas2);
+        SharedPreferences.Editor editor = sharedPreferences.edit();
 
 
         View.OnClickListener listener = new View.OnClickListener(){
             @Override
             public void onClick(View view) {
+                if(view.equals(iconoComida)){
+                    editor.putString("categoria", "Comida");
+                    editor.apply();
+                } else{
+                    if (view.equals(iconoHigiene)){
+                        editor.putString("categoria", "Higiene");
+                        editor.apply();
+                    } else{
+                        if (view.equals(iconoJuguetes)){
+                            editor.putString("categoria", "Juguetes");
+                            editor.apply();
+                        } else{
+                            if (view.equals(iconoAccesorios)){
+                                editor.putString("categoria", "Accesorios");
+                                editor.apply();
+                            }
+                        }
+                    }
+                }
                 Activity activity = getActivity();
-                ((Menu)activity).onClickMenu(8);
+                ((Menu)activity).onClickMenu(6);
             }
         };
-        iconoComida1.setOnClickListener(listener);
-        iconoComida2.setOnClickListener(listener);
-        iconoComida3.setOnClickListener(listener);
-        iconoComida4.setOnClickListener(listener);
+        iconoComida.setOnClickListener(listener);
+        iconoHigiene.setOnClickListener(listener);
+        iconoJuguetes.setOnClickListener(listener);
+        iconoAccesorios.setOnClickListener(listener);
 
         return vista;
     }

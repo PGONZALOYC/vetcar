@@ -14,11 +14,12 @@ import androidx.fragment.app.FragmentTransaction;
 import com.example.vetcare.R;
 import com.example.vetcare.clases.Menu;
 import com.example.vetcare.fragmentos.AgregarMascotaFragment;
+import com.example.vetcare.fragmentos.DetalleProductosFragment;
 import com.example.vetcare.fragmentos.MisCitasFragment;
 import com.example.vetcare.fragmentos.PerfilMascotaFragment;
 import com.example.vetcare.fragmentos.PerfilUsuarioFragment;
+import com.example.vetcare.fragmentos.CategProductosFragment;
 import com.example.vetcare.fragmentos.ProductosFragment;
-import com.example.vetcare.fragmentos.ProdutosComidaFragment;
 import com.example.vetcare.fragmentos.ReservarCitaFragment;
 
 public class MenuActivity extends AppCompatActivity implements Menu {
@@ -34,15 +35,16 @@ public class MenuActivity extends AppCompatActivity implements Menu {
             return insets;
         });
 
-        fragments = new Fragment[8];
+        fragments = new Fragment[14];
 
         fragments[0] = new ReservarCitaFragment();
-        fragments[1] = new ProductosFragment();
+        fragments[1] = new CategProductosFragment();
         fragments[2] = new MisCitasFragment();
         fragments[4] = new PerfilUsuarioFragment();
         fragments[5] = new PerfilMascotaFragment();
-        fragments[6] = new ProdutosComidaFragment();
+        fragments[6] = new ProductosFragment();
         fragments[7] = new AgregarMascotaFragment();
+        fragments[8] = new DetalleProductosFragment();
 
         int id = getIntent().getIntExtra("id", -1);
         onClickMenu(id);
@@ -55,4 +57,6 @@ public class MenuActivity extends AppCompatActivity implements Menu {
         ft.replace(R.id.menRelArea, fragments[id]);
         ft.commit();
     }
+
+
 }

@@ -6,6 +6,7 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     tools:context=".fragmentos.ProductosFragment">
 
+    <!-- TODO: Update blank fragment layout -->
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -18,10 +19,10 @@
             android:orientation="horizontal">
 
             <TextView
+                android:id="@+id/proLblProductosTitulo"
                 android:layout_width="190dp"
                 android:layout_height="50dp"
                 android:layout_marginTop="10dp"
-                android:text="@string/proLblProductosTitulo"
                 android:textSize="35sp"
                 android:fontFamily="@font/poppins_semibold"
                 android:textColor="@color/titulo"/>
@@ -44,43 +45,14 @@
                 android:src="@drawable/icono_carrito" />
         </LinearLayout>
 
-
         <GridLayout
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="15dp"
+
             android:columnCount="2"
-            android:rowCount="2"
+            android:rowCount="3"
             android:layout_gravity="center_horizontal">
-            <androidx.cardview.widget.CardView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                app:cardCornerRadius="10dp"
-                app:cardUseCompatPadding="true"
-                app:cardElevation="5dp">
-                <LinearLayout
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:orientation="vertical"
-                    >
-                    <ImageView
-                        android:id="@+id/proIconoComida"
-                        android:layout_width="150dp"
-                        android:layout_height="160dp"
-                        android:layout_margin="10dp"
-                        android:contentDescription="@string/proDescIconoComida"
-                        android:src="@drawable/icono_comida"
-                        android:layout_gravity="center"/>
-                    <TextView
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent"
-                        android:textSize="25sp"
-                        android:text="@string/proLblComida"
-                        android:fontFamily="@font/poppins_semibold"
-                        android:textAlignment="center"
-                        android:textColor="@color/titulo" />
-                </LinearLayout>
-            </androidx.cardview.widget.CardView>
 
             <androidx.cardview.widget.CardView
                 android:layout_width="match_parent"
@@ -94,21 +66,21 @@
                     android:orientation="vertical"
                     >
                     <ImageView
-                        android:id="@+id/proIconoHigiene"
+                        android:id="@+id/proIconoComidaCanbo"
                         android:layout_width="150dp"
                         android:layout_height="160dp"
                         android:layout_margin="10dp"
-                        android:contentDescription="@string/proDescIconoHigiene"
-                        android:src="@drawable/icono_higiene"
+                        android:contentDescription="@string/proDescIconoComidaCanbo"
+                        android:src="@drawable/canbo"
                         android:layout_gravity="center"/>
                     <TextView
                         android:layout_width="match_parent"
-                        android:layout_height="match_parent"
-                        android:text="@string/proLblHigiene"
-                        android:textSize="25sp"
-                        android:fontFamily="@font/poppins_semibold"
+                        android:layout_height="50dp"
+                        android:textSize="15sp"
+                        android:text="@string/proLblComidaCanbo"
+                        android:fontFamily="@font/poppins_medium"
                         android:textAlignment="center"
-                        android:textColor="@color/titulo" />
+                        android:textColor="@color/titulo"/>
                 </LinearLayout>
             </androidx.cardview.widget.CardView>
 
@@ -121,23 +93,24 @@
                 <LinearLayout
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:orientation="vertical">
+                    android:orientation="vertical"
+                    >
                     <ImageView
-                        android:id="@+id/proIconoJuguete"
+                        android:id="@+id/proIconoComidaWhiskas"
                         android:layout_width="150dp"
                         android:layout_height="160dp"
                         android:layout_margin="10dp"
-                        android:contentDescription="@string/proDescIconoJuguete"
-                        android:src="@drawable/icono_juguete"
-                        android:layout_gravity="center_horizontal"/>
+                        android:contentDescription="@string/proDescIconoComidaWhiskas"
+                        android:src="@drawable/whiskas"
+                        android:layout_gravity="center"/>
                     <TextView
                         android:layout_width="match_parent"
-                        android:layout_height="match_parent"
-                        android:text="@string/proLblJuguete"
-                        android:textSize="25sp"
-                        android:fontFamily="@font/poppins_semibold"
+                        android:layout_height="50dp"
+                        android:textSize="15sp"
+                        android:text="@string/proLblComidaWhiskas"
+                        android:fontFamily="@font/poppins_medium"
                         android:textAlignment="center"
-                        android:textColor="@color/titulo" />
+                        android:textColor="@color/titulo"/>
                 </LinearLayout>
             </androidx.cardview.widget.CardView>
 
@@ -150,26 +123,57 @@
                 <LinearLayout
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:orientation="vertical">
+                    android:orientation="vertical"
+                    >
                     <ImageView
-                        android:id="@+id/proIconoAccesorios"
+                        android:id="@+id/proIconoComidaCanbo2"
                         android:layout_width="150dp"
                         android:layout_height="160dp"
                         android:layout_margin="10dp"
-                        android:contentDescription="@string/proDescIconoAccesorios"
-                        android:src="@drawable/icono_accesorio"
-                        android:layout_gravity="center_horizontal"/>
+                        android:contentDescription="@string/proDescIconoComidaCanbo"
+                        android:src="@drawable/canbo"
+                        android:layout_gravity="center"/>
                     <TextView
                         android:layout_width="match_parent"
-                        android:layout_height="match_parent"
-                        android:text="@string/proLblAccesorios"
-                        android:textSize="25sp"
-                        android:fontFamily="@font/poppins_semibold"
+                        android:layout_height="50dp"
+                        android:textSize="15sp"
+                        android:text="@string/proLblComidaCanbo"
+                        android:fontFamily="@font/poppins_medium"
                         android:textAlignment="center"
-                        android:textColor="@color/titulo" />
+                        android:textColor="@color/titulo"/>
                 </LinearLayout>
             </androidx.cardview.widget.CardView>
 
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:cardCornerRadius="10dp"
+                app:cardUseCompatPadding="true"
+                app:cardElevation="5dp">
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    >
+                    <ImageView
+                        android:id="@+id/proIconoComidaWhiskas2"
+                        android:layout_width="150dp"
+                        android:layout_height="160dp"
+                        android:layout_margin="10dp"
+                        android:contentDescription="@string/proDescIconoComidaWhiskas2"
+                        android:src="@drawable/whiskas"
+                        android:layout_gravity="center"/>
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:textSize="15sp"
+                        android:text="@string/proLblComidaWhiskas2"
+                        android:fontFamily="@font/poppins_medium"
+                        android:textAlignment="center"
+                        android:textColor="@color/titulo"/>
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
         </GridLayout>
     </LinearLayout>
+
 </FrameLayout>

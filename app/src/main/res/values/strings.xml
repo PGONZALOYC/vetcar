@@ -65,8 +65,8 @@
     <string name="resLblReservarSede">Sede</string>
     <string name="resBtnReservarCita">Reservar cita</string>
 
-    <!--Productos-->
-    <string name="proLblProductosTitulo">Productos</string>
+    <!--Categorias de Productos-->
+    <string name="proLblCategProductosTitulo" >Productos</string>
     <string name="proLblComida">Comida</string>
     <string name="proLblHigiene">Higiene</string>
     <string name="proLblJuguete">Juguetes</string>
@@ -78,8 +78,7 @@
     <string name="proDescIconoJuguete">Icono juguete</string>
     <string name="proDescIconoAccesorios">Icono accesorios</string>
 
-    <!--Productos comida-->
-    <string name="proLblProductosComidaTitulo">Comida</string>
+    <!--Productos-->
     <string name="proDescIconoComidaCanbo">Comida canbo</string>
     <string name="proLblComidaCanbo">Canbo super premium S/.23.00</string>
     <string name="proDescIconoComidaCanbo2">Comida canbo 2</string>
