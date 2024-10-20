@@ -70,7 +70,7 @@
                         android:layout_width="150dp"
                         android:layout_height="160dp"
                         android:layout_margin="10dp"
-                        android:contentDescription="@string/proDescIconoComidaCanbo"
+                        android:contentDescription="@string/proLblComidaCanbo"
                         android:src="@drawable/canbo"
                         android:layout_gravity="center"/>
                     <TextView

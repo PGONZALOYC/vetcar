@@ -66,7 +66,7 @@
     <string name="resBtnReservarCita">Reservar cita</string>
 
     <!--Categorias de Productos-->
-    <string name="proLblCategProductosTitulo" >Productos</string>
+    <string name="proLblCategProductosTitulo">Productos</string>
     <string name="proLblComida">Comida</string>
     <string name="proLblHigiene">Higiene</string>
     <string name="proLblJuguete">Juguetes</string>
@@ -132,6 +132,15 @@
     <string name="agremascLblTipo">Tipo</string>
     <string name="agremascImgMascota">Vista previa de la imagen de mascota</string>
 
+    <!--Nosotros-->
+    <string name="nosLblNosotrosTitulo">VETCARE</string>
+    <string name="nosLblTelefono">+51 92272054</string>
+    <string name="nosLBLtxtInformacion">En Vetcare, nos apasiona el cuidado y bienestar de tus mascotas. Con más de 10 años de experiencia, siempre nos esforzaremos por mantener la salud de tu mejor amigo.</string>
+    <string name="nosDescimg2">ImagenX</string>
+    <string name="nosDescimg1">ImagenF</string>
+    <string name="nosLblEncuentranos">Encuentranos</string>
+    <string name="nosDescimg5">Mapa</string>
+    <string name="nosDescimgHeader">Cabecera</string>
 
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
