@@ -1,4 +1,3 @@
-<?xml version="1.0" encoding="utf-8"?>
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
@@ -10,14 +9,79 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:orientation="vertical">
+        android:orientation="vertical"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="0dp">
+
+        <ImageView
+            android:id="@+id/imgHeader"
+            android:layout_width="312dp"
+            android:layout_height="221dp"
+            android:layout_gravity="center"
+            android:src="@drawable/logo" />
+
         <TextView
-            android:id="@+id/bieLblSaludo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="VETCARE"
+            android:textSize="30sp"
+            android:textStyle="bold"
+            android:textColor="#000000"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text=" +51 92272034"
+            android:textSize="18sp" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/img1"
+                android:layout_width="100dp"
+                android:layout_height="70dp"
+                android:contentDescription="Imagen 1"
+                android:src="@drawable/xx" />
+
+            <ImageView
+                android:id="@+id/img2"
+                android:layout_width="100dp"
+                android:layout_height="70dp"
+                android:contentDescription="Imagen 2"
+                android:src="@drawable/bb" />
+        </LinearLayout>
+
+
+        <TextView
+            android:id="@+id/txtInformacion"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:gravity="center"
-            android:textSize="25sp"
-            android:text="@string/app_name"/>
+            android:padding="16dp"
+            android:text="En Vetcare, nos apasiona el cuidado y bienestar de tus mascotas. Con más de 10 años de experiencia, siempre nos esforzaremos por mantener la salud de tu mejor amigo."
+            android:textSize="16sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="Encuéntranos"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:textColor="#000000"/>
+
+
+        <ImageView
+            android:id="@+id/img3"
+            android:layout_width="match_parent"
+            android:layout_height="138dp"
+            android:src="@drawable/mapa1" />
+
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
@@ -26,10 +90,10 @@
 
             <fragment
                 android:id="@+id/frgMenu"
+                android:name="com.example.vetcare.fragmentos.MenuFragment"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:name="com.example.vetcare.fragmentos.MenuFragment"
-                tools:layout="@layout/fragment_menu"/>
+                tools:layout="@layout/fragment_menu" />
         </LinearLayout>
 
     </LinearLayout>
